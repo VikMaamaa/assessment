@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.email{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  
+  letter-spacing: 0.25px;
+  
+  /* 00. On Surface / Medium Emphasis */
+  
+  color: rgba(0, 0, 0, 0.6);
+  
+}
+
+.name{
+ 
+font-weight: 400;
+font-size: 16px;
+line-height: 14px;
+margin-bottom: 4%;
+/* identical to box height, or 88% */
+
+
+/* 00. On Surface / High Emphasis */
+
+color: rgba(0, 0, 0, 0.87);
+}
+
+.but-view{
+  margin-right: 10% !important;
+}
