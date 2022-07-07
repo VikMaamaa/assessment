@@ -43,6 +43,11 @@ color: rgba(0, 0, 0, 0.87);
 .but-view{
   margin-right: 10% !important;
 }
-.dark.tllbar  .css-78trlr-MuiButtonBase-root-MuiIconButton-root {
-	color: rgba(255, 255, 255, 0.87)
+
+
+ .dark.tllbar  .mui-rte-toolbar .MuiButtonBase-root {
+
+}
+.dark.tllbar .MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium{
+		color: rgba(255, 255, 255, 0.87)
 }

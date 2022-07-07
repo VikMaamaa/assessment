@@ -94,13 +94,15 @@ function App() {
       },
       placeHolder: {
         position: "static",
+        textAlign: 'left',
+        padding: '1%',
         color: theme.palette.type === 'dark' ? 'rgba(255, 255, 255, 0.38)':'rgba(0, 0, 0, 0.6)'
       },
       editor: {
         flexGrow: 1,
         overflowY: "auto",
-        color: theme.palette.type === 'dark' ? 'rgba(255, 255, 255, 0.87)':'rgba(0, 0, 0, 0.87)'
-        
+        color: theme.palette.type === 'dark' ? 'rgba(255, 255, 255, 0.87)':'rgba(0, 0, 0, 0.87)',
+        padding: '1%'
       }
     }
   }
