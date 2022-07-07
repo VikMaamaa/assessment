@@ -113,10 +113,10 @@ function App() {
     <ThemeProvider theme={theme}>
      <Box sx={{ display: 'flex', minHeight: '100vh', background:theme.palette.type === 'dark' ?'rgba(0, 0, 0, 0.6)':'#F5F5F5' }}>
      <CssBaseline />
-     <Box component="nav" sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }} style={{ boxShadow: '0px 3px 4px rgba(0, 0, 0, 0.14), 0px 3px 3px rgba(0, 0, 0, 0.12), 0px 1px 8px rgba(0, 0, 0, 0.2)'}}>
+     <Box component="nav" sx={isSmUp? { width: { sm: drawerWidth }, flexShrink: { sm: 0 },   }: { width: { sm: drawerWidth }, flexShrink: { sm: 0 },  background: theme.palette.type === 'dark' ?'rgba(0, 0, 0, 0.95)':'#F5F5F5' }} style={{ boxShadow: '0px 3px 4px rgba(0, 0, 0, 0.14), 0px 3px 3px rgba(0, 0, 0, 0.12), 0px 1px 8px rgba(0, 0, 0, 0.2)'}}>
      {isSmUp ? null : (
             <Navi
-              PaperProps={{ style: { width: '70%' } }}
+              PaperProps={{ style: { width: '70%',  background: theme.palette.type === 'dark' ?'rgba(0, 0, 0, 0.6)':'#F5F5F5', backdropFilter:"blur(4px)", WebkitBackdropFilter:"blur(4px)"} }}
               variant="temporary"
               open={mobileOpen}
               onClose={handleDrawerToggle}
