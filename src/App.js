@@ -114,7 +114,7 @@ function App() {
      <Box component="nav" sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }} style={{ boxShadow: '0px 3px 4px rgba(0, 0, 0, 0.14), 0px 3px 3px rgba(0, 0, 0, 0.12), 0px 1px 8px rgba(0, 0, 0, 0.2)'}}>
      {isSmUp ? null : (
             <Navi
-              PaperProps={{ style: { width: drawerWidth } }}
+              PaperProps={{ style: { width: '70%' } }}
               variant="temporary"
               open={mobileOpen}
               onClose={handleDrawerToggle}
