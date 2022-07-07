@@ -135,8 +135,8 @@ const categories = [
         color: theme.palette.type === 'dark' ? 'rgba(0, 0, 0, 0.87)': ''
       },
       '&:hover, &:focus': {
-        bgcolor: '#F2E7FE',
-        background: '#F2E7FE',
+        bgcolor: '#F2E7FE !important',
+        background: '#F2E7FE !important',
         borderRadius: '0px 100px 100px 0px',
         color: theme.palette.type === 'dark' ? 'rgba(0, 0, 0, 0.87)': ''
       },
@@ -177,7 +177,7 @@ const categories = [
             {children.map(({ id: childId, icon, children:nestChildren }, i) => (<>
               <ListItem disablePadding sx={{paddingRight: 2}} key={childId}>
                 <ListItemButton className="hov-tag" selected={selectedIndex === childId} onClick={(event) => handleListItemClick(event, childId)} sx={item}>
-                  <ListItemIcon className={`hov-icon ${theme.palette.type === 'dark' ?'dark':''}`} sx={selectedIndex === childId? con: don}>{icon}</ListItemIcon>
+                  <ListItemIcon className={`hov-icon ${theme.palette.type === 'dark' ?'dark':''} ${selectedIndex === childId? '': 'nosel'}`} sx={selectedIndex === childId? con: don}>{icon}</ListItemIcon>
                   <ListItemText>{childId}</ListItemText>
                   {nestChildren? (selectedIndex === childId ? <ArrowDropUpIcon /> : <ArrowRightIcon />) : ""}
                 </ListItemButton>

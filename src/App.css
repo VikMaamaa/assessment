@@ -37,8 +37,9 @@
   }
 }
 
-.hov-tag:hover .hov-icon.dark{
+.hov-tag:hover .hov-icon.dark.nosel{
   color: rgba(0, 0, 0, 0.87);
 }
+
 
 
